@@ -1,0 +1,84 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+F:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml three_eight_decoder.twx three_eight_decoder.ncd -o
+three_eight_decoder.twr three_eight_decoder.pcf -ucf three_eight.ucf
+
+Design file:              three_eight_decoder.ncd
+Physical constraint file: three_eight_decoder.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+en             |y0             |   11.301|
+en             |y1             |   11.313|
+en             |y2             |   12.422|
+en             |y3             |   12.102|
+en             |y4             |   12.641|
+en             |y5             |   12.312|
+en             |y6             |   12.790|
+en             |y7             |   12.534|
+i0             |y0             |   11.770|
+i0             |y1             |   11.680|
+i0             |y2             |   12.607|
+i0             |y3             |   12.469|
+i0             |y4             |   12.647|
+i0             |y5             |   12.781|
+i0             |y6             |   12.796|
+i0             |y7             |   12.719|
+i1             |y0             |   11.324|
+i1             |y1             |   11.055|
+i1             |y2             |   12.155|
+i1             |y3             |   11.844|
+i1             |y4             |   12.174|
+i1             |y5             |   12.335|
+i1             |y6             |   12.323|
+i1             |y7             |   12.267|
+i2             |y0             |   11.560|
+i2             |y1             |   11.526|
+i2             |y2             |   12.825|
+i2             |y3             |   12.315|
+i2             |y4             |   12.674|
+i2             |y5             |   12.571|
+i2             |y6             |   12.823|
+i2             |y7             |   12.937|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Sep 02 22:56:33 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 167 MB
+
+
+

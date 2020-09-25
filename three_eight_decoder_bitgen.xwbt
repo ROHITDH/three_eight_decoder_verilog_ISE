@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\Xilinx\14.7\ISE_DS\three_eight_decoder\three_eight_decoder.ncd
+OUTFILE=F:\Xilinx\14.7\ISE_DS\three_eight_decoder\three_eight_decoder.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=F:\Xilinx\14.7\ISE_DS\three_eight_decoder
+LICENSE=WebPack
+USER_INFO=212015362_0_0_143

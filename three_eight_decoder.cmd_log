@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "F:/Xilinx/14.7/ISE_DS/three_eight_decoder/three_eight_decoder.xst" -ofn "F:/Xilinx/14.7/ISE_DS/three_eight_decoder/three_eight_decoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 three_eight_decoder.ngc three_eight_decoder.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o three_eight_decoder_map.ncd three_eight_decoder.ngd three_eight_decoder.pcf 
+par -w -intstyle ise -ol high -mt off three_eight_decoder_map.ncd three_eight_decoder.ncd three_eight_decoder.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml three_eight_decoder.twx three_eight_decoder.ncd -o three_eight_decoder.twr three_eight_decoder.pcf 
+bitgen -intstyle ise -f three_eight_decoder.ut three_eight_decoder.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc three_eight.ucf -p xc6slx9-tqg144-2 three_eight_decoder.ngc three_eight_decoder.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o three_eight_decoder_map.ncd three_eight_decoder.ngd three_eight_decoder.pcf 
+par -w -intstyle ise -ol high -mt off three_eight_decoder_map.ncd three_eight_decoder.ncd three_eight_decoder.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml three_eight_decoder.twx three_eight_decoder.ncd -o three_eight_decoder.twr three_eight_decoder.pcf -ucf three_eight.ucf 
+bitgen -intstyle ise -f three_eight_decoder.ut three_eight_decoder.ncd 
